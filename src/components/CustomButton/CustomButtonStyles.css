@@ -1,0 +1,47 @@
+.custom-btn {
+  font-size: 1rem;
+  background: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 15px 50px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.custom-btn:hover {
+  background: #fff;
+  color: black;
+  border: solid 1px black;
+}
+
+.custom-btn:focus {
+  outline: none !important;
+}
+
+.custom-btn2 {
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: solid 1px #fff;
+  display: inline-block;
+  padding: 15px 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: ease-in;
+  outline: none;
+}
+
+.custom-btn2:hover {
+  background: #fff;
+  color: black;
+  border: solid 1px white;
+}
+
+.custom-btn2:focus {
+  outline: none !important;
+}

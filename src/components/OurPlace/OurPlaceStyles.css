@@ -1,0 +1,37 @@
+.our-place {
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.our-place-img {
+  width: 540px;
+  transform: translateY(-70px);
+  z-index: 2;
+}
+
+.our-place-img img {
+  box-shadow: 20px 50px 40px rgba(0, 0, 0, 0.1);
+}
+.our-place-txt {
+  margin-left: 100px;
+  align-self: center;
+  transform: translateY(-40px);
+  z-index: 3;
+}
+
+.txt-black {
+  width: 500px;
+}
+
+.gray-vector {
+  width: 1050px;
+  z-index: 1;
+  position: absolute;
+  transform: translate(-420px, 200px);
+  opacity: 0.5;
+}

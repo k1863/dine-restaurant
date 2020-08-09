@@ -1,0 +1,120 @@
+.family-gathering {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--ebonyClay);
+  position: relative;
+}
+
+.beaver-lines {
+  position: absolute;
+  width: 150px;
+  left: -440px;
+  top: -275px;
+}
+
+.slides-container {
+  position: relative;
+  display: flex;
+  width: 540px;
+  right: 230px;
+  top: 150px;
+}
+.gray-vector-slideshow-bg {
+  width: 1050px;
+  z-index: -1;
+  position: absolute;
+  transform: translate(-420px, 200px);
+  opacity: 0.5;
+  top: -200px;
+  left: -100px;
+}
+.img-slide {
+  position: absolute;
+  box-shadow: 20px 50px 40px rgba(0, 0, 0, 0.1);
+}
+
+.family-events-text-box {
+  color: var(--ebonyClay);
+  position: relative;
+  width: 100px;
+  top: 250px;
+  right: 120px;
+}
+
+.event-text {
+  position: absolute;
+  width: 350px;
+}
+.event-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.event-text p {
+  margin-top: 10px;
+  width: 480px;
+  font-size: 1.2rem;
+}
+
+.family-gathering .custom-btn {
+  position: absolute;
+  top: 480px;
+  right: 400px;
+}
+.event-names {
+  width: 250px;
+  position: absolute;
+  font-size: 14px;
+  bottom: 200px;
+  right: 400px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700px;
+}
+
+.event-txt {
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+.indicator-lines-cont {
+  width: 100px;
+  z-index: 5;
+  position: absolute;
+  top: 585px;
+  right: 670px;
+}
+
+.indicator-line1 {
+  width: 140px;
+  margin-top: 0px;
+}
+.indicator-line2 {
+  position: absolute;
+  width: 100px;
+  margin-top: 50px;
+}
+.indicator-line3 {
+  position: absolute;
+  width: 100px;
+  margin-top: 100px;
+}
+
+.event-txt-light {
+  width: 250px;
+  position: absolute;
+  font-size: 14px;
+  bottom: 200px;
+  right: 400px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.event-txt-light li {
+  padding-top: 30px;
+  opacity: 0.5;
+  font-weight: 400;
+  color: #999;
+}
