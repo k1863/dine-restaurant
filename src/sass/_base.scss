@@ -1,0 +1,43 @@
+:root {
+  --ebony-clay: #242b37;
+  --beaver: #9e7f66;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+  --transition: 300ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //defines what 1rem is
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9/16
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8/16
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12/16
+  }
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  overflow-x: hidden;
+}

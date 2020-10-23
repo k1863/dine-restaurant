@@ -9,7 +9,7 @@ import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import CustomButton from "../../components/CustomButton/CustomButton";
 
-import "./BookingStyles.css";
+import "../../sass/app.scss";
 
 const validationSchema = Yup.object({
   firstName: Yup.string()
@@ -31,11 +31,12 @@ const Booking = () => {
               </div>
             </Link>
             <div className="header">
-              <h1>Reservations</h1>
-              <p className="reserve-txt">
-                We can’t wait to host you. If you have any special requirements
-                please feel free to call on the phone number below. We’ll be
-                happy to accommodate you.
+              <h1 className="header__secondary">Reservations</h1>
+              <p className="text__main margin__top">
+                We can’t wait to host you. If you have<br></br> any special
+                requirements please feel<br></br> free to call on the phone
+                number<br></br> below. We’ll be happy to accommodate<br></br>{" "}
+                you.
               </p>
             </div>
           </div>

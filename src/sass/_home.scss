@@ -1,0 +1,50 @@
+.header-txt-black {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--ebony-clay);
+}
+
+.txt-black {
+  font-size: 1.2rem;
+  width: 500px;
+  margin: 50px 0;
+}
+
+.beaver-lines {
+  width: 150px;
+  position: absolute;
+  overflow: hidden;
+  transform: translate(600px, 385px);
+  z-index: 3;
+}
+
+.line-circle {
+  width: 100px;
+  position: absolute;
+  transform: translateY(-50px);
+}
+
+.lines {
+  height: 2px;
+  width: 150px;
+  background-color: #a08069;
+  transition: background-color 0.6s ease;
+}
+
+.img-rec {
+  transform: rotateX(-180deg);
+  width: 75%;
+  left: -150px;
+  top: -5px;
+  margin: 0;
+  z-index: -2;
+}
+
+.rec-lines {
+  width: 10%;
+  right: 650px;
+  bottom: -130px;
+  z-index: -1;
+}

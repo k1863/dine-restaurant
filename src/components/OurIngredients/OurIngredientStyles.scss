@@ -1,0 +1,42 @@
+.our-ingredients {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.our-ingredients-txt-box {
+  align-self: center;
+  z-index: 3;
+}
+
+.beaver-lines {
+  position: absolute;
+  left: 40%;
+  top: 0rem;
+}
+
+.our-ingredients-img {
+  width: auto;
+  transform: translateY(10rem);
+  z-index: 2;
+  margin-left: 10rem;
+}
+
+.our-ingredients-txt-box {
+  align-self: center;
+  transform: translateY(10rem);
+  z-index: 3;
+}
+
+.gray-vector {
+  width: 70%;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  overflow-y: hidden;
+  transform: scaleX(-1) translate(-42rem, 38.5rem);
+  overflow-y: hidden;
+}

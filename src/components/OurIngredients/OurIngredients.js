@@ -1,5 +1,6 @@
 import React from "react";
-import "./OurIngredientsStyles.css";
+
+import "../../sass/app.scss";
 
 const OurIngredients = () => {
   return (
@@ -8,12 +9,14 @@ const OurIngredients = () => {
         <div className="line-circle">
           <img src="images/circle-line.svg" alt="gray-vector" />
         </div>
-        <h2 className="header-txt-black">The most locally
-        <br></br>sourced food</h2>
-        <p className="txt-black">
-          All our ingredients come directly from our farm or local fishery. So
-          you can be sure that you’re eating the freshest, most sustainable
-          food.
+        <h2 className="header__secondary">
+          The most locally
+          <br></br>sourced food
+        </h2>
+        <p className="text__main margin__top margin__bottom">
+          All our ingredients come directly from our farm<br></br>or local
+          fishery. So you can be sure that you’re<br></br> eating the freshest,
+          most sustainable food.
         </p>
       </div>
       <div className="beaver-lines">

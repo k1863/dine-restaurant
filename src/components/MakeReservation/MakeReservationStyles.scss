@@ -1,5 +1,5 @@
 .make-reservation {
-  height: 250px;
+  height: 25rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -13,25 +13,31 @@
 }
 .make-reservation h2 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
   align-self: center;
-  transform: translateX(-100px);
+  display: flex;
+  justify-self: center;
 }
 .reserve-link {
   align-self: center;
+  margin-left: 10rem;
 }
 
 .btn-reservation {
   background-color: transparent;
-  transform: translateX(100px);
-  height: 70px;
+  transform: translateX(10rem);
+  height: 7rem;
   font-size: 14px;
   font-weight: 400;
 }
 
-.make-reservation .custom-btn2:hover {
+.make-reservation .btn:hover {
   background: #fff;
   color: black;
   border: solid 1px white;
+}
+
+.rsrv-btn {
+  cursor: pointer;
 }

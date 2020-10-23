@@ -1,8 +1,9 @@
 import React from "react";
-import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Booking from "./pages/Booking/Booking";
+
+import "./sass/app.scss";
 
 function App() {
   return (

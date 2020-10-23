@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./BookingStyles.css";
+import "../../sass/app.scss";
 
 function IncreaseDecrease(props) {
   const [count, setCount] = useState(4);

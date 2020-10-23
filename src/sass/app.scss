@@ -1,0 +1,16 @@
+@import "mixins";
+@import "variables";
+@import "base";
+@import "home";
+@import "typography";
+
+@import "../components/CallToAction/CallToActionStyles.scss";
+@import "../components/CustomButton/CustomButtonStyles.scss";
+@import "../components/FamilyGathering/FamilyGatheringStyles.scss";
+@import "../components/Footer/FooterStyles.scss";
+@import "../components/MakeReservation/MakeReservationStyles.scss";
+@import "../components/OurIngredients/OurIngredientStyles.scss";
+@import "../components/OurMenu/OurMenuStyles.scss";
+@import "../components/OurPlace/OurPlaceStyles.scss";
+@import "../components/OurIngredients/OurIngredientStyles.scss";
+@import "../pages/Booking/BookingStyles.scss";

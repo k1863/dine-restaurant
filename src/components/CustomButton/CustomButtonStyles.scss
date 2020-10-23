@@ -1,39 +1,49 @@
-.custom-btn {
-  font-size: 1rem;
-  background: black;
-  color: #fff;
+.btn {
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 500;
   border: none;
   display: inline-block;
-  padding: 15px 50px;
+  padding: 2rem 5rem;
   letter-spacing: 2px;
   text-align: center;
 }
 
-.custom-btn:hover {
+.black-btn {
+  background: black;
+  color: #fff;
+}
+
+.btn:hover {
   background: #fff;
   color: black;
   border: solid 1px black;
 }
 
-.custom-btn:focus {
+.btn:focus {
   outline: none !important;
 }
 
-.custom-btn2 {
-  font-size: 1rem;
+.white-btn {
+  font-size: 1.4rem;
   background: transparent;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   border: solid 1px #fff;
   display: inline-block;
-  padding: 15px 50px;
+  padding: 2rem 5rem;
   letter-spacing: 2px;
   text-align: center;
   transition: ease-in;
   outline: none;
+}
+
+.white-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .custom-btn2:hover {

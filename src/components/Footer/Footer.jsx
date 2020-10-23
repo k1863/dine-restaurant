@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../logo.png";
 
-import "./FooterStyles.css";
+import "../../sass/app.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="logo-box">
+      <div className="logo-box-footer">
         <Link to="/">
           <img src={logo} alt="dine-logo" />
         </Link>
