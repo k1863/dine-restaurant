@@ -10,6 +10,15 @@
   overflow: hidden;
   -webkit-background-size: cover;
   background-size: cover;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 0;
+    height: 30rem;
+  }
 }
 .make-reservation h2 {
   color: #fff;
@@ -22,14 +31,22 @@
 .reserve-link {
   align-self: center;
   margin-left: 10rem;
+
+  @include respond(tab-land) {
+    margin-left: 0;
+  }
 }
 
-.btn-reservation {
+.rsrv-btn {
   background-color: transparent;
   transform: translateX(10rem);
   height: 7rem;
-  font-size: 14px;
+  font-size: 1.8rem;
   font-weight: 400;
+
+  @include respond(tab-land) {
+    transform: translate(0rem, 5rem);
+  }
 }
 
 .make-reservation .btn:hover {

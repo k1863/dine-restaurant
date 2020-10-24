@@ -6,13 +6,31 @@
   display: flex;
   justify-content: center;
   position: relative;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+  }
 }
 
+.line-circle--menu {
+  width: 10rem;
+  transform: translate(18rem, -5rem);
+}
 .our-menu-text-box {
   margin-right: 10rem;
   align-self: center;
   transform: translateY(-5rem);
   z-index: 3;
+
+  @include respond(tab-land) {
+    text-align: center;
+    margin-right: 0rem;
+
+    transform: translateY(0rem);
+  }
 }
 
 .our-menu-text-box .header-txt-black {
@@ -29,6 +47,10 @@
   flex-direction: column;
   align-self: center;
   transform: translateY(5rem);
+
+  @include respond(tab-land) {
+    transform: translateY(0rem);
+  }
 }
 
 .menu-food {

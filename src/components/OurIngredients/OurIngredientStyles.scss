@@ -4,31 +4,95 @@
   height: 100vh;
   color: black;
   display: flex;
-  justify-content: center;
   position: relative;
-}
-.our-ingredients-txt-box {
-  align-self: center;
-  z-index: 3;
+
+  @include respond(tab-land) {
+    display: flex;
+    text-align: center;
+    height: 70vh;
+  }
+
+  .beaver-lines {
+    position: absolute;
+    left: 40%;
+    top: -5rem;
+
+    @include respond(tab-land) {
+      left: 20%;
+      top: 15rem;
+    }
+  }
 }
 
-.beaver-lines {
-  position: absolute;
-  left: 40%;
-  top: 0rem;
+.line-circle--ingredients {
+  width: 10rem;
+  left: 0;
+  top: 30%;
+
+  @include respond(tab-land) {
+   margin-left: 45%;
+transform: translateY(5rem);
+  }
+}
+
+.our-ingredients-txt-box {
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+  @include respond(tab-land) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .our-ingredients-img {
   width: auto;
-  transform: translateY(10rem);
   z-index: 2;
   margin-left: 10rem;
+
+  @include respond(tab-land) {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+  }
 }
 
+.locally-sourced-md {
+  display: none;
+
+  @include respond(tab-land) {
+    display: flex;
+    width: 70%;
+  }
+}
+
+.locally-sourced-lg {
+  display: flex;
+  width: 54rem;
+
+  @include respond(tab-land) {
+    display: none;
+  }
+}
 .our-ingredients-txt-box {
   align-self: center;
   transform: translateY(10rem);
   z-index: 3;
+
+  @include respond(tab-land) {
+    transform: translateY(0rem);
+  }
+}
+
+.locally-sourced-txt {
+  @include respond(tab-land) {
+    transform: translateY(10rem);
+  }
 }
 
 .gray-vector {
@@ -37,6 +101,16 @@
   position: absolute;
   opacity: 0.5;
   overflow-y: hidden;
-  transform: scaleX(-1) translate(-42rem, 38.5rem);
+  transform: scaleX(-1);
   overflow-y: hidden;
+  left: 40%;
+  bottom: 0;
+
+  @include respond(tab-land) {
+    bottom: 0;
+    left: 50%;
+    overflow-x: hidden;
+    transform: scaleX(-1) translate(0rem, 0);
+    width: 100%;
+  }
 }

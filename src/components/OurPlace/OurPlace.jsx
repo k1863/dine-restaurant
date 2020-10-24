@@ -6,10 +6,19 @@ const OurPlace = () => {
   return (
     <div className="our-place">
       <div className="our-place-img">
-        <img src="images/place-img.jpg" alt="dine-place" />
+        <img
+          className="our-place-lg"
+          src="images/enjoyable-place-desktop@2x.jpg"
+          alt="dine-place"
+        />
+        <img
+          className="our-place-md"
+          src="images/enjoyable-place-tablet@2x.jpg"
+          alt="dine-place"
+        />
       </div>
       <div className="our-place-txt">
-        <div className="line-circle">
+        <div className="line-circle--ourplace">
           <img src="images/circle-line.svg" alt="line-svg" />
         </div>
         <h2 className="header__secondary">
@@ -22,7 +31,7 @@ const OurPlace = () => {
           farm before your meal.
         </p>
       </div>
-      <div className="gray-vector">
+      <div className="gray-vector--ourplace">
         <img src="/images/rec-bg.svg" alt="gray-vector" />
       </div>
     </div>

@@ -9,11 +9,37 @@
   color: white;
   line-height: 2;
   letter-spacing: 2px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  position: relative;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address {
+    @include respond(tab-land) {
+      margin: 0;
+      top: 0;
+    }
+  }
+  .open-times {
+    @include respond(tab-land) {
+      margin-left: 10rem;
+    }
+  }
 }
 
 .logo-box-footer {
   width: 10rem;
   display: flex;
   align-self: center;
+
+  @include respond(tab-land) {
+    display: block;
+    left: 10rem;
+    top: 10rem;
+    position: absolute;
+  }
 }

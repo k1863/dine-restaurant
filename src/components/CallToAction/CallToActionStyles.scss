@@ -1,21 +1,46 @@
 .call-to-action {
   width: 100%;
   height: 115vh;
-  background-image: url(/images/cta-bg-img.jpg);
-  background-color: black;
+  background-image: url(/images/hero-bg-desktop@2x.jpg);
+  background-color: #111111;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+
+  @include respond(tab-land) {
+    background-image: url(/images/hero-bg-tablet@2x.jpg);
+    background-position: top;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+  }
 }
 
 .logo-box-cta {
-  width: 10rem;
+  width: 14rem;
   margin-top: 8rem;
   margin-left: 17rem;
   display: inline-block;
+
+  @include respond(tab-land) {
+    margin: 0 auto;
+    padding-top: 30rem;
+    width: 10rem;
+    display: flex;
+    justify-self: center;
+  }
 }
 
 .header {
   margin-top: 13rem;
   margin-left: 17rem;
+
+  @include respond(tab-land) {
+    margin: 3rem auto;
+    text-align: center;
+  }
 }

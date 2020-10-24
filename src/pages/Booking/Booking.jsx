@@ -30,14 +30,19 @@ const Booking = () => {
                 <img src={logo} alt="dine-logo" />
               </div>
             </Link>
-            <div className="header">
-              <h1 className="header__secondary">Reservations</h1>
+            <div className="header__reservations">
+              <h1 className="header__main">Reservations</h1>
               <p className="text__main margin__top">
-                We can’t wait to host you. If you have<br></br> any special
-                requirements please feel<br></br> free to call on the phone
-                number<br></br> below. We’ll be happy to accommodate<br></br>{" "}
-                you.
+                We can’t wait to host you. If you have any<br></br> special
+                requirements please feel free to call on<br></br> the phone
+                number below. We’ll be happy to<br></br> accommodate you.
               </p>
+            </div>
+            <div className="beaver-lines__reservation">
+              <img src="/images/lines.svg" alt="lines" />
+            </div>
+            <div className="gray-vector__reservation">
+              <img src="/images/rec-bg.svg" alt="gray-vector" />
             </div>
           </div>
           <div className="card-container">
@@ -85,7 +90,7 @@ const Booking = () => {
                     <CustomButton
                       type="submit"
                       style={{ width: "100%" }}
-                      className="custom-btn"
+                      className="black-btn btn margin__top"
                     >
                       Make Reservation
                     </CustomButton>

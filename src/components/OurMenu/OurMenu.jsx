@@ -7,7 +7,7 @@ class OurMenu extends Component {
     return (
       <div className="our-menu">
         <div className="our-menu-text-box">
-          <div className="line-circle">
+          <div className="line-circle--menu">
             <img src="images/circle-line.svg" alt="gray-vector" />
           </div>
           <h2 className="header__secondary">

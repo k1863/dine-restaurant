@@ -12,6 +12,11 @@ const fadeImages = [
   "images/slide_7.jpg",
 ];
 
+const fadeImages2 = [
+  "images/slide7.jpg",
+  "images/slide8.jpg",
+  "images/slide9.jpg",
+];
 const eventNames = ["Family Gathering", "Special Events", "Social Events"];
 
 const properties = {
@@ -35,12 +40,21 @@ const FamilyGathering = () => {
           ))}
         </Fade>
       </div>
+      <div className="slides-container-tab">
+        <Fade {...properties}>
+          {fadeImages2.map((eachImage, index) => (
+            <div key={index} className="img-slide">
+              <img src={eachImage} alt="dine-event" />
+            </div>
+          ))}
+        </Fade>
+      </div>
       <div className="gray-vector-slideshow-bg">
         <img src="/images/rec-bg.svg" alt="gray-vector" />
       </div>
       <div className="family-events-text-box">
         <Fade {...properties}>
-          <div className="event-text">
+          <div className="event-text2">
             <h2 className="header__secondary">Family Gathering</h2>
             <p className="text__main">
               We love catering for entire families. So please<br></br> bring
@@ -48,7 +62,7 @@ const FamilyGathering = () => {
               We’ll provide a memorable<br></br>experience for all.
             </p>
           </div>
-          <div className="event-text">
+          <div className="event-text2">
             <h2 className="header__secondary">Special Events</h2>
             <p className="text__main">
               Whether it’s a romantic dinner or special date<br></br> you’re
@@ -57,7 +71,7 @@ const FamilyGathering = () => {
               meal.
             </p>
           </div>
-          <div className="event-text">
+          <div className="event-text2">
             <h2 className="header__secondary">Social Events</h2>
             <p className="text__main">
               Are you looking to have a larger social event?<br></br> No
@@ -86,7 +100,9 @@ const FamilyGathering = () => {
         </ul>
         <ul className="event-txt-light">
           {eventNames.map((event) => (
-            <li key={event.index}>{event}</li>
+            <li className="event-item" key={event.index}>
+              {event}
+            </li>
           ))}
         </ul>
 

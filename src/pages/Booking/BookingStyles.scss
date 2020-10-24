@@ -8,24 +8,34 @@
   -webkit-background-size: cover;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .reserve-info-container .logo-box {
-  width: 100px;
-  margin: 0;
-  margin-top: 80px;
+  width: 10rem;
+  margin-top: 8rem;
   display: inline-block;
 }
 
-.reserve-info-container .header {
-  margin-top: 130px;
-  margin: 5rem 0;
-  width: 60rem;
+.header__reservations {
+  color: white;
+  margin-top: 10rem;
 }
 
-.booking-container .header {
-  color: white;
+.beaver-lines__reservation {
+  width: 14rem;
+  position: absolute;
+  right: 60rem;
+  bottom: -2rem;
+  z-index: 3;
+}
+
+.gray-vector__reservation {
+  width: 260%;
+  margin-top: 7.5rem;
+  margin-left: -15rem;
+  transform: scaleX(-1);
+  transform: rotateX(180deg);
 }
 
 .reserve-txt {
@@ -35,29 +45,29 @@
 
 .card-container {
   background-color: white;
-  width: 530px;
-  height: 540px;
-  transform: translateY(200px);
-  box-shadow: 20px 50px 40px rgba(0, 0, 0, 0.1);
+  width: 53rem;
+  height: 54rem;
+  transform: translateY(20rem);
+  box-shadow: 2rem 5rem 4rem rgba(0, 0, 0, 0.1);
+  z-index: 5;
 }
 
 .card-content {
-  margin: 20px 60px;
+  margin: 2rem 6rem;
   position: relative;
 }
 
 .input {
   background-color: transparent;
-  border: none !important;
-  border-bottom: 1px solid #555 !important;
-  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #555;
   color: #555;
   box-sizing: border-box;
-  padding: 10px 0px;
+  padding: 1rem 0;
   position: relative;
   width: 100%;
   outline: none;
-  margin-top: 20px;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
 input::-webkit-input-placeholder {
@@ -77,13 +87,13 @@ input:focus::-webkit-input-placeholder {
   display: inline-block;
   height: 2px;
   position: absolute;
-  margin-top: 64px;
-  margin-left: -410px;
+  margin-top: 6.7rem;
+  left: 0;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  width: 410px;
+  width: 100%;
 }
 input::-webkit-input-placeholder {
   color: #aaa;
@@ -101,15 +111,14 @@ input:focus::-webkit-input-placeholder {
   background-color: transparent;
   border: none !important;
   border-bottom: 1px solid #555 !important;
-  border-width: 0 0 1px 0;
   color: #555;
   box-sizing: border-box;
-  padding: 10px 0 0;
+  padding: 1rem 0;
   position: relative;
   outline: none;
   letter-spacing: 2px;
-  font-size: 1.5rem;
-  width: 235px !important;
+  font-size: 1.8rem;
+  width: 100%;
 }
 input-date::-webkit-input-placeholder {
   color: #aaa;
@@ -119,8 +128,14 @@ input-date::-webkit-input-placeholder {
 .input-label {
   color: #aaa;
   padding: 15px 0px;
-  font-size: 1.2rem;
-  margin-right: 10px;
+  font-size: 1.8rem;
+  width: 45%;
+}
+
+.time-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .glyphicon {
