@@ -18,6 +18,10 @@
     width: 100%;
     height: 80vh;
   }
+
+  @include respond(phone) {
+    height: 100vh;
+  }
 }
 
 .logo-box-cta {
@@ -32,6 +36,10 @@
     width: 10rem;
     display: flex;
     justify-self: center;
+  }
+
+  @include respond(phone) {
+    padding-top: 10rem;
   }
 }
 

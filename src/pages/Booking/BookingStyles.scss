@@ -9,17 +9,50 @@
   background-size: cover;
   display: flex;
   justify-content: space-around;
+
+  @include respond(tab-port) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    background-position: 0px -600px;
+  }
+
+  @include respond(phone) {
+    height: 120vh;
+  }
 }
 
 .reserve-info-container .logo-box {
   width: 10rem;
   margin-top: 8rem;
   display: inline-block;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+  }
 }
 
+.reserve-info-container {
+  @include respond(tab-port) {
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .header__reservations {
   color: white;
   margin-top: 10rem;
+
+  @include respond(tab-port) {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .beaver-lines__reservation {
@@ -28,6 +61,13 @@
   right: 60rem;
   bottom: -2rem;
   z-index: 3;
+
+  @include respond(tab-port) {
+    text-align: center;
+    left: 15rem;
+    right: 0;
+    bottom: 30rem;
+  }
 }
 
 .gray-vector__reservation {
@@ -36,6 +76,20 @@
   margin-left: -15rem;
   transform: scaleX(-1);
   transform: rotateX(180deg);
+
+  @include respond(tab-port) {
+    width: 150%;
+    margin-top: 0;
+    margin-left: 0;
+    transform: scaleX(-1);
+    transform: rotateX(180deg);
+    position: absolute;
+    top: 41.5%;
+    left: -100%;
+  }
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .reserve-txt {
@@ -50,6 +104,17 @@
   transform: translateY(20rem);
   box-shadow: 2rem 5rem 4rem rgba(0, 0, 0, 0.1);
   z-index: 5;
+
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+    transform: translateY(5rem);
+  }
+
+  @include respond(phone) {
+    width: 60%;
+    height: 50%;
+  }
 }
 
 .card-content {

@@ -16,6 +16,11 @@ const OurPlace = () => {
           src="images/enjoyable-place-tablet@2x.jpg"
           alt="dine-place"
         />
+        <img
+          className="our-place-sm"
+          src="images/enjoyable-place-mobile@2x.jpg"
+          alt="dine-place"
+        />
       </div>
       <div className="our-place-txt">
         <div className="line-circle--ourplace">

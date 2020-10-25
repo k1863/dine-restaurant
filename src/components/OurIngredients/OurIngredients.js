@@ -17,6 +17,11 @@ const OurIngredients = () => {
             alt="locally-sourced"
             className="locally-sourced-md"
           />
+          <img
+            src="images/locally-sourced-mobile@2x.jpg"
+            alt="locally-sourced"
+            className="locally-sourced-sm"
+          />
         </div>
         <div className="line-circle--ingredients">
           <img src="images/circle-line.svg" alt="gray-vector" />

@@ -13,6 +13,9 @@
     justify-content: center;
     height: 70vh;
   }
+  @include respond(phone) {
+    height: 180vh;
+  }
 }
 
 .line-circle--menu {
@@ -51,6 +54,10 @@
   @include respond(tab-land) {
     transform: translateY(0rem);
   }
+  @include respond(phone) {
+    transform: translateY(5rem);
+    width: 100%;
+  }
 }
 
 .menu-food {
@@ -58,10 +65,21 @@
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-top: 0;
+  }
 }
 
 .food-img {
   width: 13rem;
+
+  @include respond(phone) {
+    width: 60%;
+  }
 }
 
 .line-food {
@@ -72,6 +90,11 @@
 
 .food-txt-box {
   margin-left: 50px;
+
+  @include respond(phone) {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .food-header {
@@ -86,4 +109,10 @@
   margin-top: 5rem;
   line-height: 1.6;
   transform: translateY(-40px);
+
+  @include respond(phone) {
+    transform: translateY(0);
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
 }

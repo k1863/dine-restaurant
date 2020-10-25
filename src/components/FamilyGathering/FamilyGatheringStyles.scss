@@ -11,6 +11,12 @@
     justify-content: center;
     height: 90vh;
   }
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
 }
 
 .beaver-lines__fg {
@@ -24,6 +30,10 @@
     left: 10rem;
     top: 10rem;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .slides-container {
@@ -34,6 +44,14 @@
 
   @include respond(tab-land) {
     display: none;
+  }
+
+  @include respond(phone) {
+    display: flex;
+    top: -7rem;
+    width: 100%;
+    position: absolute;
+    left: 15%;
   }
 }
 
@@ -46,6 +64,10 @@
     position: absolute;
     top: 0;
     left: 15%;
+  }
+
+  @include respond(phone) {
+    display: none;
   }
 }
 
@@ -60,6 +82,10 @@
 
   @include respond(tab-land) {
     transform: translate(-55rem, 20rem);
+  }
+
+  @include respond(phone) {
+    display: none;
   }
 }
 
@@ -82,11 +108,10 @@
   top: 20%;
 
   @include respond(tab-land) {
-    display: block;
-    left: 27%;
-    top: 15%;
-    text-align: center;
+    display: inline-block;
     width: 100%;
+    top: 14%;
+    text-align: center;
   }
 }
 
@@ -97,8 +122,13 @@
 
   @include respond(tab-land) {
     top: 85%;
-    transform: translateX(50%);
-    width: 30%;
+    display: flex;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include respond(phone) {
+    left: auto;
   }
 }
 
@@ -121,16 +151,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 80rem;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    position: absolute;
   }
 }
 
 .bold-event-text {
   font-weight: 700;
-  opacity: 1;
+  color: red;
 }
 
 .event-text2 {
@@ -144,11 +171,8 @@
   }
 
   @include respond(tab-land) {
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -169,17 +193,19 @@
   right: 71rem;
 
   @include respond(tab-land) {
-    width: 15rem;
-    top: 70.6rem;
+    top: 60.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 50rem;
     right: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    position: absolute;
+  }
+
+  @include respond(phone) {
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -189,9 +215,9 @@
   margin-top: 0px;
 
   @include respond(tab-land) {
-    position: relative;
     width: 10rem;
-    margin-left: -28rem;
+    margin-left: 0;
+    left: -80%;
   }
 }
 .indicator-line2 {
@@ -200,10 +226,8 @@
   margin-top: 5rem;
 
   @include respond(tab-land) {
-    position: relative;
     width: 10rem;
     margin-top: 0;
-    margin-left: 4rem;
   }
 }
 .indicator-line3 {
@@ -212,10 +236,10 @@
   margin-top: 10rem;
 
   @include respond(tab-land) {
-    position: relative;
     width: 10rem;
-    margin-left: 35rem;
+    margin-left: 0;
     margin-top: 0;
+    right: 25%;
   }
 }
 
@@ -232,20 +256,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80rem;
-    top: 65rem;
+    width: 80%;
     right: 0;
-    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 40%;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    transform: translate(0);
     text-align: center;
-    position: absolute;
   }
 }
 
-.event-txt-light li {
+.event-item {
   margin-top: 3rem;
-  opacity: 0.5;
-  font-weight: 400;
-  color: #999;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #777;
 }

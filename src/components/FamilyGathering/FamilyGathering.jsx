@@ -6,26 +6,26 @@ import { Link } from "react-router-dom";
 
 import "../../sass/app.scss";
 
-const fadeImages = [
-  "images/slide_5.jpg",
-  "images/slide_6.jpg",
-  "images/slide_7.jpg",
-];
-
-const fadeImages2 = [
-  "images/slide7.jpg",
-  "images/slide8.jpg",
-  "images/slide9.jpg",
-];
-const eventNames = ["Family Gathering", "Special Events", "Social Events"];
-
-const properties = {
-  duration: 5000,
-  transitionDuration: 500,
-  indicators: true,
-};
-
 const FamilyGathering = () => {
+  const fadeImages = [
+    "images/slide_5.jpg",
+    "images/slide_6.jpg",
+    "images/slide_7.jpg",
+  ];
+
+  const fadeImages2 = [
+    "images/slide7.jpg",
+    "images/slide8.jpg",
+    "images/slide9.jpg",
+  ];
+  const eventNames = ["Family Gathering", "Special Events", "Social Events"];
+
+  const properties = {
+    duration: 5000,
+    transitionDuration: 500,
+    indicators: true,
+  };
+
   return (
     <div className="family-gathering">
       <div className="beaver-lines__fg">
@@ -99,9 +99,15 @@ const FamilyGathering = () => {
           </Fade>
         </ul>
         <ul className="event-txt-light">
-          {eventNames.map((event) => (
-            <li className="event-item" key={event.index}>
-              {event}
+          {eventNames.map((eventitem) => (
+            <li
+              className="event-item"
+              style={{
+                opacity: "1" ? { fontWeight: "Bold" } : { opacity: "0.5" },
+              }}
+              key={eventitem.index}
+            >
+              {eventitem}
             </li>
           ))}
         </ul>

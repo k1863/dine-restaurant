@@ -18,6 +18,12 @@
 
 .our-place-img {
   z-index: 30;
+
+  @include respond(phone) {
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
+  }
 }
 .our-place-md {
   display: none;
@@ -31,6 +37,18 @@
     z-index: 30;
     transform: translateY(-10rem);
     box-shadow: 1rem 3rem 3rem rgba(0, 0, 0, 0.1);
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+.our-place-sm {
+  display: none;
+
+  @include respond(phone) {
+    display: flex;
+    width: 60%;
   }
 }
 

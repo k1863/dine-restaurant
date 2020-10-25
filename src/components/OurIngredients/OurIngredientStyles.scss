@@ -22,6 +22,11 @@
       top: 15rem;
     }
   }
+
+  @include respond(phone) {
+    height: 90vh;
+    transform: translateY(5rem);
+  }
 }
 
 .line-circle--ingredients {
@@ -30,8 +35,8 @@
   top: 30%;
 
   @include respond(tab-land) {
-   margin-left: 45%;
-transform: translateY(5rem);
+    margin-left: 45%;
+    transform: translateY(5rem);
   }
 }
 
@@ -69,8 +74,20 @@ transform: translateY(5rem);
     display: flex;
     width: 70%;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
+.locally-sourced-sm {
+  display: none;
+
+  @include respond(phone) {
+    display: flex;
+    width: 70%;
+  }
+}
 .locally-sourced-lg {
   display: flex;
   width: 54rem;
@@ -86,6 +103,10 @@ transform: translateY(5rem);
 
   @include respond(tab-land) {
     transform: translateY(0rem);
+  }
+
+  @include respond(phone) {
+    align-self: flex-start;
   }
 }
 
@@ -112,5 +133,8 @@ transform: translateY(5rem);
     overflow-x: hidden;
     transform: scaleX(-1) translate(0rem, 0);
     width: 100%;
+  }
+  @include respond(phone) {
+    display: none;
   }
 }

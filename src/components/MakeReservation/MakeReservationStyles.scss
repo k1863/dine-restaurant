@@ -19,6 +19,10 @@
     background-position: 0;
     height: 30rem;
   }
+
+  @include respond(phone) {
+    height: 40rem;
+  }
 }
 .make-reservation h2 {
   color: #fff;
@@ -27,6 +31,10 @@
   align-self: center;
   display: flex;
   justify-self: center;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 .reserve-link {
   align-self: center;

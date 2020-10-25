@@ -7,7 +7,7 @@ import "../../sass/app.scss";
 const MakeReservation = () => {
   return (
     <div className="make-reservation">
-      <h2 className="header__secondary">ready to make a reservation?</h2>
+      <h2 className="header__secondary">Ready to make a reservation?</h2>
       <Link to="/booking" className="reserve-link">
         <CustomButton className="white-btn btn rsrv-btn">
           book a table
