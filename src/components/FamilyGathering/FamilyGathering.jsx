@@ -20,9 +20,25 @@ const FamilyGathering = () => {
   ];
   const eventNames = ["Family Gathering", "Special Events", "Social Events"];
 
+  // var handleChange = (prev, nxt) => {
+  //   if (prev === 0 || prev === 1 || prev === 2) {
+  //     setCurrentStyle({
+  //       fontWeight: "bold",
+  //       opacity: "1",
+  //     });
+  //   } else if (nxt === 0 || nxt === 1 || nxt === 2) {
+  //     setStyle({
+  //       fontWeight: "400",
+  //       opacity: "1",
+  //       color: "red",
+  //     });
+  //   }
+  // };
+
   const properties = {
     duration: 5000,
     transitionDuration: 500,
+    autoplay: true,
     indicators: true,
   };
 
@@ -99,20 +115,35 @@ const FamilyGathering = () => {
           </Fade>
         </ul>
         <ul className="event-txt-light">
-          {eventNames.map((eventitem) => (
-            <li
-              className="event-item"
-              style={{
-                opacity: "1" ? { fontWeight: "Bold" } : { opacity: "0.5" },
-              }}
-              key={eventitem.index}
-            >
-              {eventitem}
-            </li>
-          ))}
+          <Fade {...properties}>
+            {eventNames.map((eventitem) => (
+              <li className="event-item" key={eventitem.index}>
+                {eventitem}
+              </li>
+            ))}
+          </Fade>
         </ul>
 
         <div className="indicator-lines-cont">
+          <Fade {...properties}>
+            <img
+              className="indicator-line1"
+              src="/images/line.svg"
+              alt="line"
+            />
+            <img
+              className="indicator-line2"
+              src="/images/line.svg"
+              alt="line"
+            />
+            <img
+              className="indicator-line3"
+              src="/images/line.svg"
+              alt="line"
+            />
+          </Fade>
+        </div>
+        <div className="indicator-lines-horizontal">
           <Fade {...properties}>
             <img
               className="indicator-line1"
